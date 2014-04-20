@@ -15,6 +15,7 @@ def anaylsiscore():
                         tempfile = os.path.join(subdir,filename)
                         filehash = hashfile.hashingfile(tempfile)
                         filetype = magic.from_file(tempfile)
+                        #move file from binary to UTF-8 encoding to make strings searchable
                         filetypestring = filetype.decode(encoding='UTF-8')
 
                         #If the file is a executable run strings on it
