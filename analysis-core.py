@@ -36,7 +36,7 @@ for subdir, directories, filenames in os.walk(FILEDIR):
                     stringsInfile = "none"
                     #Create the full file path to pass into libmagic (via python-magic)
                     tempfile = os.path.join(subdir,filename)
-                    filehash = hashfile(tempfile)
+                    filehash = hashfile.hashingfile(tempfile)
                     filetype = magic.from_file(tempfile)
                     filetypestring = filetype.decode(encoding='UTF-8')
 

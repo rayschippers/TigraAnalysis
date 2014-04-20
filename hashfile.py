@@ -1,7 +1,7 @@
 __author__ = 'raymond'
 import hashlib
 
-def hashfile(tempfile):
+def hashingfile(tempfile):
 #Purpose: hash a file
     #hachlblocksize limits how many bytes to read in at once
     hashblocksize = 81960
